@@ -2,6 +2,7 @@ from mycroft.skills.core import MycroftSkill
 from mycroft.skills.audioservice import AudioService
 
 import requests
+import fuzzywuzzy
 
 class HAUtils(MycroftSkill):
 
