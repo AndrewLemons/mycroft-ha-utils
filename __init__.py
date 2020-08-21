@@ -26,7 +26,7 @@ class HAUtils(MycroftSkill):
         if self.settings.get('ssl') == "true":
             method = "https"
         
-        url = method + "://" + self.settings.get('host_address') + ":" + self.settings.get('port') + "/api/states/" + self.settings.get('light_entity')
+        url = f"{method}://{self.settings.get('host_address')}:{self.settings.get('port')}/api/states/{self.settings.get('light_entity')}"
         payload = {"state": state}
         requests.post(url, data = payload, headers = {"Authorization": "Bearer " + self.settings.get('llat')})
 
