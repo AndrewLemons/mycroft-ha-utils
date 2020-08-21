@@ -1,0 +1,46 @@
+{
+    "skillMetadata": {
+        "sections": [
+            {
+                "name": "Home Assistant Instance",
+                "fields": [
+                    {
+                        "name": "host_address",
+                        "type": "text",
+                        "label": "Address or IP",
+                        "value": ""
+                    },
+                    {
+                        "name": "llat",
+                        "type": "text",
+                        "label": "Long-lived Access Token",
+                        "value": ""
+                    },
+                    {
+                        "name": "port",
+                        "type": "number",
+                        "label": "Port",
+                        "value": "8123"
+                    },
+                    {
+                        "name": "ssl",
+                        "type": "checkbox",
+                        "label": "SSL",
+                        "value": "false"
+                    }
+                ]
+            }
+            {
+                "name": "Entities",
+                "fields": [
+                    {
+                        "name": "light_entity",
+                        "type": "text",
+                        "label": "Light entity",
+                        "value": ""
+                    }
+                ]
+            }
+        ]
+    }
+}

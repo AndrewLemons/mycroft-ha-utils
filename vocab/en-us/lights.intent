@@ -1,0 +1,3 @@
+turn {state} the lights
+turn the lights {state}
+lights {state}
