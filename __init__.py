@@ -27,10 +27,10 @@ class HAUtils(MycroftSkill):
             method = "https"
         
         url = f"{method}://{self.settings.get('host_address')}:{self.settings.get('port')}/api/states/{self.settings.get('light_entity')}"
-        payload = {"state": state}
-        requests.post(url, data = payload, headers = {"Authorization": "Bearer " + self.settings.get('llat')})
-
-        self.speak("the lights have been turned " + state)
+        #payload = {"state": state}
+        #requests.post(url, data = payload, headers = {"Authorization": "Bearer " + self.settings.get('llat')})
+        self.speak(url)
+        #self.speak("the lights have been turned " + state)
 
     def stop(self):
         pass
